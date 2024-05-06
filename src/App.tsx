@@ -16,9 +16,6 @@ function App() {
   const weekday = daysOfWeek[today.getDay()];
   const dateString = moment(today).format("ll");
 
-  console.log(weekday);
-  console.log(dateString);
-
   return (
     <div className="content-container">
       <h1 className="weekday">{weekday}</h1>
