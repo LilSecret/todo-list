@@ -66,19 +66,32 @@ hr {
 }
 
 .task-form {
+  --form-input-padding: 5px 8px;
+  font-size: 1.5rem;
+  color: var(--neutral-100);
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr auto;
   margin-block: 1rem;
   align-items: center;
   gap: 8px;
 }
 
 .form-input {
+  color: inherit;
   display: inline-flex;
   border-radius: 4px;
   background-color: var(--neutral-700);
   border: solid 1px var(--neutral-900);
-  padding: 5px 8px;
+  padding: var(--form-input-padding);
+}
+
+.newTaskBtn {
+  background-color: var(--neutral-700);
+  border: solid 1px var(--neutral-900);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: var(--form-input-padding);
+  color: inherit;
 }
 
 .list-item {
