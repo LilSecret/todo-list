@@ -45,11 +45,11 @@ li {
 }
 
 hr {
-  background-color: var(--hr--bg-clr);
+  border-color: var(--hr--bg-clr);
 }
 
 .content-container {
-  padding-block: 4rem;
+  padding: 4rem 5rem;
   margin-top: 3rem;
   width: 1000px;
   background-color: var(--main-content-bg);
