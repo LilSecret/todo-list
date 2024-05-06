@@ -65,6 +65,22 @@ hr {
   opacity: 0.6;
 }
 
+.task-form {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  margin-block: 1rem;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-input {
+  display: inline-flex;
+  border-radius: 4px;
+  background-color: var(--neutral-700);
+  border: solid 1px var(--neutral-900);
+  padding: 5px 8px;
+}
+
 .list-item {
   display: flex;
   padding-block: 1rem;
