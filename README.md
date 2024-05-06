@@ -6,4 +6,4 @@ I've created this app for an assignment in one of my courses. I got the design f
 
 ## 🤔 Improvements
 
-- **Light and Dark Theme: ** an always handy user implementation
+- **Light/Dark Mode:** an always handy user implementation
