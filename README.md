@@ -26,3 +26,8 @@ You can make a todo list. **Note:** when you refresh your data is not saved. I'v
 ## 🐞 Bugs
 
 - **Not Responsive:** App is not responsive for mobile view.
+
+## 🎥 Demo
+
+https://github.com/LilSecret/todo-list/assets/72845680/3f485427-26be-4a55-aee5-97b434d42e81
+
