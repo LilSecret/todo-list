@@ -78,7 +78,6 @@ hr {
 
 .content-header {
   margin-block: 3rem;
-  /* margin-block: 1.25rem; */
 }
 
 .form-input {
@@ -97,6 +96,10 @@ hr {
   cursor: pointer;
   padding: var(--form-input-padding);
   color: inherit;
+}
+
+.spacer:has(+ .list-items:empty) {
+  display: none;
 }
 
 .list-item {

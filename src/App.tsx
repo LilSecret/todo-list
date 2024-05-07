@@ -76,12 +76,12 @@ function App() {
         </button>
       </form>
 
-      <hr className="tasks-separator" />
-      <div className="list-items">
+      <hr className="spacer" />
+      <ul className="list-items">
         {listItems.map((item, index) => (
           <ListItem content={item} key={index} />
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
