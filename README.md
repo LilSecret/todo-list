@@ -15,3 +15,10 @@ You can make a todo list. **Note:** when you refresh your data is not saved. I'v
 - **Saved Cache:** This would fix the refresh from deleting your tasks
 - **Light/Dark Mode:** an always handy user implementation
 - **Pomodoro Timer:** a nice extra tool for the app
+
+## 🛠️ Technologies
+
+- `Vite`
+- `React`
+- `TypeScript`
+- `CSS`
