@@ -1,8 +1,6 @@
 # 📃 Todo List - Designed by Jihye Leee
 
-You can make a todo list. **Note:** when you refresh your data is not saved. I've created this app for an assignment in one of my courses. I got the design from [Jihye Leee](https://dribbble.com/shots/3384144-Hello-Dribbble).
-
-![Jihye Leee](/src/assets/jihyes-esign.png)
+You can make a todo list. **Note:** when you refresh your data is not saved. I've created this app for an assignment in one of my courses. I got the design inspiration from [Jihye Leee on Dribbble](https://dribbble.com/shots/3384144-Hello-Dribbble).
 
 ## 🚀 Features
 
@@ -30,4 +28,3 @@ You can make a todo list. **Note:** when you refresh your data is not saved. I'v
 ## 🎥 Demo
 
 https://github.com/LilSecret/todo-list/assets/72845680/3f485427-26be-4a55-aee5-97b434d42e81
-
