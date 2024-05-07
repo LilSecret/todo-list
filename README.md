@@ -22,3 +22,7 @@ You can make a todo list. **Note:** when you refresh your data is not saved. I'v
 - `React`
 - `TypeScript`
 - `CSS`
+
+## 🐞 Bugs
+
+- **Not Responsive:** App is not responsive for mobile view.
