@@ -44,8 +44,10 @@ function App() {
 
   return (
     <div className="content-container">
-      <h1 className="weekday">{weekday}</h1>
-      <span className="date">{dateString}</span>
+      <div className="content-header">
+        <h1 className="weekday">{weekday}</h1>
+        <span className="date">{dateString}</span>
+      </div>
 
       <form onSubmit={newTaskHandler} className="task-form">
         Add Task:
@@ -74,10 +76,12 @@ function App() {
         </button>
       </form>
 
-      <hr />
-      {listItems.map((item, index) => (
-        <ListItem content={item} key={index} />
-      ))}
+      <hr className="tasks-separator" />
+      <div className="list-items">
+        {listItems.map((item, index) => (
+          <ListItem content={item} key={index} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -76,6 +76,11 @@ hr {
   gap: 8px;
 }
 
+.content-header {
+  margin-block: 3rem;
+  /* margin-block: 1.25rem; */
+}
+
 .form-input {
   color: inherit;
   display: inline-flex;
