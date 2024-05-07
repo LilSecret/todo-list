@@ -85,7 +85,7 @@ hr {
   padding: var(--form-input-padding);
 }
 
-.newTaskBtn {
+.new-task-btn {
   background-color: var(--neutral-700);
   border: solid 1px var(--neutral-900);
   border-radius: 4px;
