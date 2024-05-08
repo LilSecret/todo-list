@@ -45,11 +45,11 @@ function App() {
   };
 
   return (
-    <div className="content-container" data-theme="dark">
-      <div className="content-header">
+    <main className="content-container" data-theme="dark">
+      <header className="content-header">
         <h1 className="weekday">{weekday}</h1>
         <span className="date">{dateString}</span>
-      </div>
+      </header>
 
       <form onSubmit={newTaskHandler} className="task-form">
         Add Task:
@@ -84,7 +84,7 @@ function App() {
           <ListItem content={item} key={index} />
         ))}
       </ul>
-    </div>
+    </main>
   );
 }
 
