@@ -1,11 +1,11 @@
 import moment from "moment";
 import "./css/index.css";
 import { daysOfWeek } from "./data";
-import ListItem from "./components/ListItem";
 import React, { useState } from "react";
 import { TListItem } from "./types";
-import FormInput from "./components/FormInput";
+import FormInput from "./components/FormInput/FormInput";
 import toast from "react-hot-toast";
+import ListItem from "./components/ListItem/ListItem";
 
 function App() {
   const [listItems, setListItems] = useState<TListItem[]>([]);
