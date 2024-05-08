@@ -5,8 +5,10 @@
 }
 
 .list-item-checkbox {
+  cursor: pointer;
   margin-right: 1.5rem;
   transform: scale(1.7);
+  accent-color: var(--neutral-700);
 }
 
 .list-item-info {
@@ -20,7 +22,8 @@
   }
 
   & .sub-title {
-    opacity: 0.6;
+    opacity: var(--accent-opacity);
+    font-size: 0.9rem;
   }
 }
 
@@ -32,8 +35,9 @@
 
   & .circle {
     aspect-ratio: 1;
-    background-color: white;
+    background-color: currentColor;
     border-radius: 50%;
+    opacity: var(--accent-opacity);
     display: inline-block;
     width: var(--menu-circle-size);
   }

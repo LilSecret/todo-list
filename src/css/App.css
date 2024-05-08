@@ -17,13 +17,8 @@
   --primary-400: #f06292;
   --primary-600: #e55c8a;
 
-  --hr--bg-clr: var(--neutral-900);
-
-  --main-content-bg: var(--neutral-900);
-
+  --accent-opacity: 0.6;
   --menu-circle-size: 6px;
-
-  --font-base: ;
 }
 
 #root {
@@ -34,7 +29,7 @@
 body {
   height: 100vh;
   background-image: url("../assets/background.svg");
-  color: var(--neutral-100);
+  color: var(--main-content-clr);
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -45,14 +40,26 @@ li {
 }
 
 hr {
-  border-color: var(--hr--bg-clr);
+  border: none;
+  height: 2px;
+  background-color: currentColor;
+
+  [data-theme="dark"] & {
+    background-color: var(--neutral-900);
+  }
 }
 
 .content-container {
+  background-color: var(--neutral-100);
+  color: var(--neutral-900);
   padding: 4rem 5rem;
   margin-top: 3rem;
   width: 1000px;
-  background-color: var(--main-content-bg);
+
+  &[data-theme="dark"] {
+    background-color: var(--neutral-800);
+    color: var(--neutral-100);
+  }
 }
 
 .weekday {
@@ -62,13 +69,13 @@ hr {
 }
 
 .date {
-  opacity: 0.6;
+  opacity: var(--accent-opacity);
 }
 
 .task-form {
   --form-input-padding: 5px 8px;
   font-size: 1.5rem;
-  color: var(--neutral-100);
+  color: inherit;
   display: grid;
   grid-template-columns: auto 1fr 1fr auto;
   margin-block: 1rem;
@@ -81,12 +88,16 @@ hr {
 }
 
 .new-task-btn {
-  background-color: var(--neutral-700);
-  border: solid 1px var(--neutral-900);
+  background-color: var(--neutral-100);
+  border: solid 1px var(--neutral-700);
   border-radius: 4px;
   cursor: pointer;
   padding: var(--form-input-padding);
   color: inherit;
+
+  [data-theme="dark"] & {
+    background-color: var(--neutral-700);
+  }
 }
 
 .spacer:has(+ .list-items:empty) {

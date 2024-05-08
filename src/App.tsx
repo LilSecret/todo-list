@@ -43,7 +43,7 @@ function App() {
   };
 
   return (
-    <div className="content-container">
+    <div className="content-container" data-theme="dark">
       <div className="content-header">
         <h1 className="weekday">{weekday}</h1>
         <span className="date">{dateString}</span>
