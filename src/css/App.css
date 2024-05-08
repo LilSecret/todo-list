@@ -80,15 +80,6 @@ hr {
   margin-block: 3rem;
 }
 
-.form-input {
-  color: inherit;
-  display: inline-flex;
-  border-radius: 4px;
-  background-color: var(--neutral-700);
-  border: solid 1px var(--neutral-900);
-  padding: var(--form-input-padding);
-}
-
 .new-task-btn {
   background-color: var(--neutral-700);
   border: solid 1px var(--neutral-900);
@@ -100,45 +91,4 @@ hr {
 
 .spacer:has(+ .list-items:empty) {
   display: none;
-}
-
-.list-item {
-  display: flex;
-  padding-block: 1rem;
-  align-items: start;
-}
-
-.list-checkbox {
-  margin-right: 1.5rem;
-  transform: scale(1.7);
-}
-
-.list-info {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  text-align: start;
-
-  & .title {
-    font-weight: 600;
-  }
-
-  & .sub-title {
-    opacity: 0.6;
-  }
-}
-
-.list-menu {
-  display: flex;
-  margin-inline: auto 10px;
-  cursor: pointer;
-  gap: 2px;
-
-  & .circle {
-    aspect-ratio: 1;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    width: var(--menu-circle-size);
-  }
 }

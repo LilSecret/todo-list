@@ -1,4 +1,5 @@
 import { ComponentProps } from "react";
+import "./form-input.css";
 
 export default function FormInput({
   inputProps,

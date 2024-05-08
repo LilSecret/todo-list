@@ -1,0 +1,8 @@
+.form-input {
+  color: inherit;
+  display: inline-flex;
+  border-radius: 4px;
+  background-color: var(--neutral-700);
+  border: solid 1px var(--neutral-900);
+  padding: var(--form-input-padding);
+}

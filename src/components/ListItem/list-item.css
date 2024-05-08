@@ -1,0 +1,40 @@
+.list-item {
+  display: flex;
+  padding-block: 1rem;
+  align-items: start;
+}
+
+.list-item-checkbox {
+  margin-right: 1.5rem;
+  transform: scale(1.7);
+}
+
+.list-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: start;
+
+  & .title {
+    font-weight: 600;
+  }
+
+  & .sub-title {
+    opacity: 0.6;
+  }
+}
+
+.list-item-menu {
+  display: flex;
+  margin-inline: auto 10px;
+  cursor: pointer;
+  gap: 2px;
+
+  & .circle {
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    width: var(--menu-circle-size);
+  }
+}
