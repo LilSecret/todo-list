@@ -6,6 +6,7 @@ import { TListItem } from "./types";
 import FormInput from "./components/FormInput/FormInput";
 import toast from "react-hot-toast";
 import ListItem from "./components/ListItem/ListItem";
+import { capitalize } from "./utils/transformations";
 
 function App() {
   const [listItems, setListItems] = useState<TListItem[]>([]);
@@ -17,9 +18,10 @@ function App() {
   const dateString = moment(today).format("ll");
 
   const getNewTask = () => {
+    const capitalizedTitle = capitalize(titleInput);
     return subTitleInput.length > 0
-      ? { title: titleInput, subTitle: subTitleInput }
-      : { title: titleInput };
+      ? { title: capitalizedTitle, subTitle: subTitleInput }
+      : { title: capitalizedTitle };
   };
 
   const addNewItem = () => {
