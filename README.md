@@ -14,6 +14,10 @@ You can make a todo list. **Note:** when you refresh your data is not saved. I'v
 - **Light/Dark Mode:** an always handy user implementation
 - **Pomodoro Timer:** a nice extra tool for the app
 
+## 🏗️ Development
+
+The operation wasn't to laborious. It was a simple task to make a small todo list app. I had to find a way to make a nice list of elements that had a title and a sub-heading as optional. To make sure the user wasn't able to spam away the add function, they at least had to make the title 3 characters long. I also included a nice UI notification to tell the user the current circumstance.
+
 ## 🛠️ Technologies
 
 - `Vite`
