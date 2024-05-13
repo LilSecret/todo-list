@@ -11,9 +11,9 @@ You can make a todo list. **Note:** when you refresh your data is not saved. I'v
 
 ## 🤔 Improvements
 
-- **Saved Cache:** This would fix the refresh from deleting your tasks
+- **Saved Cache:** This would fix the refresh from deleting your tasks. Also saved if it is checked.
 - **Light/Dark Mode:** an always handy user implementation
-- **Pomodoro Timer:** a nice extra tool for the app
+- **UX:** Clicking anywhere inside task could trigger would trigger the click event
 
 ## 🏗️ Development
 
