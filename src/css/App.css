@@ -85,11 +85,12 @@ hr {
   --form-input-padding: 5px 8px;
   font-size: 1.5rem;
   color: inherit;
-  display: grid;
-  grid-template-columns: auto 1fr 1fr auto;
-  margin-block: 1rem;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
+  margin-block: 1rem;
 }
 
 .content-header {
@@ -111,4 +112,10 @@ hr {
 
 .spacer:has(+ .list-items:empty) {
   display: none;
+}
+
+@media (max-width: 500px) {
+  .content-container {
+    padding: 2rem 2.75rem;
+  }
 }

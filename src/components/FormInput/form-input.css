@@ -1,6 +1,7 @@
 .form-input {
   color: inherit;
   display: inline-flex;
+  flex: 1;
   border-radius: 4px;
   padding: var(--form-input-padding);
 
