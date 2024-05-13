@@ -22,6 +22,7 @@
 .list-item-info {
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 6px;
   text-align: start;
 
@@ -35,18 +36,16 @@
   }
 }
 
-.list-item-menu {
-  display: flex;
-  margin-inline: auto 10px;
+.list-exit-icon {
+  display: block;
   cursor: pointer;
-  gap: 2px;
 
-  & .circle {
-    aspect-ratio: 1;
-    background-color: currentColor;
-    border-radius: 50%;
+  & img {
+    width: var(--icon-size-md);
+    filter: var(--fltr-neutral-100);
     opacity: var(--accent-opacity);
-    display: inline-block;
-    width: var(--menu-circle-size);
+  }
+  &:hover img {
+    opacity: 1;
   }
 }

@@ -9,10 +9,8 @@ export default function ListItem({ content }: { content: TListItem }) {
         <h4 className="title">{content.title}</h4>
         {content.subTitle && <p className="sub-title">{content.subTitle}</p>}
       </div>
-      <div className="list-item-menu">
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
+      <div className="list-exit-icon">
+        <img src="/src/assets/close.svg" alt="delete icon" />
       </div>
     </li>
   );

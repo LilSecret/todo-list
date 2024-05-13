@@ -12,10 +12,14 @@
   --primary-400: #f06292;
   --primary-600: #e55c8a;
 
+  --fltr-neutral-100: brightness(0) saturate(100%) invert(100%) sepia(1%)
+    saturate(7469%) hue-rotate(6deg) brightness(110%) contrast(99%);
+
+  --icon-size-md: 18px;
+
   --font-base: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   --accent-opacity: 0.6;
-  --menu-circle-size: 6px;
 }
 
 #root {
