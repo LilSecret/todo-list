@@ -7,6 +7,7 @@ You can make a todo list. **Note:** when you refresh your data is not saved. I'v
 - **Task:** You are able to add a task with a title and a sub-heading.
 - **Date:** Today's date is displayed.
 - **Toast Notifications:** There is nice little react-hot-toast notifications.
+- **Responsive:** App can be accessed from desktop or mobile.
 
 ## 🤔 Improvements
 
@@ -27,7 +28,7 @@ The operation wasn't to laborious. It was a simple task to make a small todo lis
 
 ## 🐞 Bugs
 
-- **Not Responsive:** App is not responsive for mobile view.
+- **Unknown:** I have not fount any currently
 
 ## 🎥 Demo
 
