@@ -1,18 +1,15 @@
-import { Dispatch, SetStateAction, useState } from "react";
+import { useState } from "react";
 import Input from "../Input/Input";
 import toast from "react-hot-toast";
 import { capitalize } from "../../utils/transformations";
-import { TListItem } from "../../types";
 import "./new-task-form.css";
+import { useListItems } from "../../hooks/ListItemContext";
 
-type TProps = {
-  listItems: TListItem[];
-  setListItems: Dispatch<SetStateAction<TListItem[]>>;
-};
-
-export const NewTaskForm = ({ listItems, setListItems }: TProps) => {
+export const NewTaskForm = () => {
   const [titleInput, setTitleInput] = useState("");
   const [subTitleInput, setSubTitleInput] = useState("");
+
+  const { listItems, setListItems } = useListItems();
 
   const getNewTask = () => {
     const capitalizedTitle = capitalize(titleInput);

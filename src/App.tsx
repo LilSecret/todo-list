@@ -1,17 +1,16 @@
 import moment from "moment";
 import "./css/index.css";
 import { daysOfWeek } from "./data";
-import { useState } from "react";
-import { TListItem } from "./types";
 import ListItem from "./components/ListItem/ListItem";
 import { NewTaskForm } from "./components/NewTaskForm/NewTaskForm";
+import { useListItems } from "./hooks/ListItemContext";
 
 function App() {
-  const [listItems, setListItems] = useState<TListItem[]>([]);
-
   const today = new Date();
   const weekday = daysOfWeek[today.getDay()];
   const dateString = moment(today).format("ll");
+
+  const { listItems } = useListItems();
 
   return (
     <main className="content-container" data-theme="dark">
@@ -20,7 +19,7 @@ function App() {
         <span className="date">{dateString}</span>
       </header>
 
-      <NewTaskForm listItems={listItems} setListItems={setListItems} />
+      <NewTaskForm />
 
       <hr className="spacer" />
       <ul className="list-items">
