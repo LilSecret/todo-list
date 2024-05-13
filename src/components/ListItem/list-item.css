@@ -7,11 +7,11 @@
 
 .list-item-checkbox {
   cursor: pointer;
-  position: relative;
-  top: 5px;
   margin-right: 1.5rem;
   transform: scale(1.7);
   accent-color: var(--neutral-700);
+  position: relative;
+  top: 5px;
 }
 
 .list-item-info {
