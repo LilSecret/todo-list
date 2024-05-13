@@ -1,0 +1,24 @@
+.task-form {
+  --form-input-padding: 5px 8px;
+  font-size: 1.5rem;
+  color: inherit;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-block: 1rem;
+}
+
+.new-task-btn {
+  background-color: var(--neutral-100);
+  border: solid 1px var(--neutral-700);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: var(--form-input-padding);
+  color: inherit;
+
+  [data-theme="dark"] & {
+    background-color: var(--neutral-700);
+  }
+}

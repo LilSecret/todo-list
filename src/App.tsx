@@ -1,48 +1,17 @@
 import moment from "moment";
 import "./css/index.css";
 import { daysOfWeek } from "./data";
-import React, { useState } from "react";
+import { useState } from "react";
 import { TListItem } from "./types";
-import FormInput from "./components/FormInput/FormInput";
-import toast from "react-hot-toast";
 import ListItem from "./components/ListItem/ListItem";
-import { capitalize } from "./utils/transformations";
+import { NewTaskForm } from "./components/NewTaskForm/NewTaskForm";
 
 function App() {
   const [listItems, setListItems] = useState<TListItem[]>([]);
-  const [titleInput, setTitleInput] = useState("");
-  const [subTitleInput, setSubTitleInput] = useState("");
 
   const today = new Date();
   const weekday = daysOfWeek[today.getDay()];
   const dateString = moment(today).format("ll");
-
-  const getNewTask = () => {
-    const capitalizedTitle = capitalize(titleInput);
-    return subTitleInput.length > 0
-      ? { title: capitalizedTitle, subTitle: subTitleInput }
-      : { title: capitalizedTitle };
-  };
-
-  const addNewItem = () => {
-    setListItems([...listItems, getNewTask()]);
-  };
-
-  const resetNewTaskForm = () => {
-    setTitleInput("");
-    setSubTitleInput("");
-  };
-
-  const newTaskHandler = (e: React.SyntheticEvent) => {
-    e.preventDefault();
-    if (titleInput.length > 2) {
-      addNewItem();
-      resetNewTaskForm();
-      toast.success("✅ Added your new task");
-    } else {
-      toast.error("❌ Title is not long enough");
-    }
-  };
 
   return (
     <main className="content-container" data-theme="dark">
@@ -51,32 +20,7 @@ function App() {
         <span className="date">{dateString}</span>
       </header>
 
-      <form onSubmit={newTaskHandler} className="task-form">
-        Add Task:
-        <FormInput
-          inputProps={{
-            name: "title",
-            placeholder: "Title",
-            value: titleInput,
-            onChange: (e) => {
-              setTitleInput(e.target.value);
-            },
-          }}
-        />
-        <FormInput
-          inputProps={{
-            name: "subTitle",
-            placeholder: "Sub Title",
-            value: subTitleInput,
-            onChange: (e) => {
-              setSubTitleInput(e.target.value);
-            },
-          }}
-        />
-        <button className="new-task-btn" type="submit">
-          +
-        </button>
-      </form>
+      <NewTaskForm listItems={listItems} setListItems={setListItems} />
 
       <hr className="spacer" />
       <ul className="list-items">

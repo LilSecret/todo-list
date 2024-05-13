@@ -2,10 +2,13 @@
   display: flex;
   padding-block: 1rem;
   align-items: start;
+  line-height: 1;
 }
 
 .list-item-checkbox {
   cursor: pointer;
+  position: relative;
+  top: 5px;
   margin-right: 1.5rem;
   transform: scale(1.7);
   accent-color: var(--neutral-700);
