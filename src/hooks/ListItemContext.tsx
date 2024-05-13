@@ -10,6 +10,7 @@ import { TListItem } from "../types";
 type TListItemContext = {
   listItems: TListItem[];
   setListItems: Dispatch<React.SetStateAction<TListItem[]>>;
+  deleteItem: (item: TListItem) => void;
 };
 
 const ListItemContext = createContext<TListItemContext | undefined>(undefined);
@@ -17,8 +18,12 @@ const ListItemContext = createContext<TListItemContext | undefined>(undefined);
 export const ListItemProvider = ({ children }: { children: ReactNode }) => {
   const [listItems, setListItems] = useState<TListItem[]>([]);
 
+  const deleteItem = (item: TListItem) => {
+    setListItems(listItems.filter((task) => task !== item));
+  };
+
   return (
-    <ListItemContext.Provider value={{ listItems, setListItems }}>
+    <ListItemContext.Provider value={{ listItems, setListItems, deleteItem }}>
       {children}
     </ListItemContext.Provider>
   );
@@ -35,5 +40,6 @@ export const useListItems = () => {
   return {
     listItems: context.listItems,
     setListItems: context.setListItems,
+    deleteItem: context.deleteItem,
   };
 };

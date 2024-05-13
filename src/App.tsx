@@ -24,7 +24,7 @@ function App() {
       <hr className="spacer" />
       <ul className="list-items">
         {listItems.map((item, index) => (
-          <ListItem content={item} key={index} />
+          <ListItem item={item} key={index} />
         ))}
       </ul>
     </main>
