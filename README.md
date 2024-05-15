@@ -32,4 +32,4 @@ The operation wasn't to laborious. It was a simple task to make a small todo lis
 
 ## 🎥 Demo
 
-https://github.com/LilSecret/todo-list/assets/72845680/3f485427-26be-4a55-aee5-97b434d42e81
+https://github.com/LilSecret/todo-list/assets/72845680/4ae212b9-a3b5-484a-9ead-38be8b6a9872
