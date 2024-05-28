@@ -28,7 +28,7 @@ The operation wasn't to laborious. It was a simple task to make a small todo lis
 
 ## 🐞 Bugs
 
-- **Unknown:** I have not fount any currently
+- **Unknown:** I haven't found any currently
 
 ## 🎥 Demo
 
