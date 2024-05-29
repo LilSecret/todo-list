@@ -1,9 +1,10 @@
-import { useListItems } from "../../hooks/ListItemContext";
+import { useDispatch } from "react-redux";
 import { TListItem } from "../../types";
 import "./list-item.css";
+import { deleteListItem } from "../../state/listItems/listItemsSlice";
 
 export default function ListItem({ item }: { item: TListItem }) {
-  const { deleteItem } = useListItems();
+  const dispatch = useDispatch();
 
   return (
     <li className="list-item">
@@ -15,7 +16,7 @@ export default function ListItem({ item }: { item: TListItem }) {
       <div
         className="list-exit-icon"
         onClick={() => {
-          deleteItem(item);
+          dispatch(deleteListItem(item));
         }}
       >
         <img src="/src/assets/close.svg" alt="delete icon" />

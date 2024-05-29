@@ -3,14 +3,15 @@ import "./css/index.css";
 import { daysOfWeek } from "./data";
 import ListItem from "./components/ListItem/ListItem";
 import { NewTaskForm } from "./components/NewTaskForm/NewTaskForm";
-import { useListItems } from "./hooks/ListItemContext";
+import { useSelector } from "react-redux";
+import { RootState } from "./state/store";
 
 function App() {
   const today = new Date();
   const weekday = daysOfWeek[today.getDay()];
   const dateString = moment(today).format("ll");
 
-  const { listItems } = useListItems();
+  const listItems = useSelector((state: RootState) => state.listItems.value);
 
   return (
     <main className="content-container" data-theme="dark">

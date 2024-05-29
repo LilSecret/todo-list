@@ -3,23 +3,19 @@ import Input from "../Input/Input";
 import toast from "react-hot-toast";
 import { capitalize } from "../../utils/transformations";
 import "./new-task-form.css";
-import { useListItems } from "../../hooks/ListItemContext";
+import { useDispatch } from "react-redux";
+import { addListItem } from "../../state/listItems/listItemsSlice";
 
 export const NewTaskForm = () => {
+  const dispatch = useDispatch();
   const [titleInput, setTitleInput] = useState("");
   const [subTitleInput, setSubTitleInput] = useState("");
-
-  const { listItems, setListItems } = useListItems();
 
   const getNewTask = () => {
     const capitalizedTitle = capitalize(titleInput);
     return subTitleInput.length > 0
       ? { title: capitalizedTitle, subTitle: subTitleInput }
       : { title: capitalizedTitle };
-  };
-
-  const addNewItem = () => {
-    setListItems([...listItems, getNewTask()]);
   };
 
   const resetNewTaskForm = () => {
@@ -30,7 +26,7 @@ export const NewTaskForm = () => {
   const newTaskHandler = (e: React.SyntheticEvent) => {
     e.preventDefault();
     if (titleInput.length > 2) {
-      addNewItem();
+      dispatch(addListItem(getNewTask()));
       resetNewTaskForm();
       toast.success("✅ Added your new task");
     } else {
