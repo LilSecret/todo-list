@@ -8,10 +8,10 @@ You can make a todo list. **Note:** when you refresh your data is not saved. I'v
 - **Date:** Today's date is displayed.
 - **Toast Notifications:** There is nice little react-hot-toast notifications.
 - **Responsive:** App can be accessed from desktop or mobile.
+- **Saved Cache:** list items are saved inside _Local Storage_.
 
 ## 🤔 Improvements
 
-- **Saved Cache:** This would fix the refresh from deleting your tasks. Also saved if it is checked.
 - **Light/Dark Mode:** an always handy user implementation
 - **UX:** Clicking anywhere inside task could trigger would trigger the click event
 
