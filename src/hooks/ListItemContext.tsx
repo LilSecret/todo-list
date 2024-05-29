@@ -1,11 +1,6 @@
-import {
-  Dispatch,
-  ReactNode,
-  createContext,
-  useContext,
-  useState,
-} from "react";
+import { Dispatch, ReactNode, createContext, useContext } from "react";
 import { TListItem } from "../types";
+import { useLocalStorage } from "./useLocalStorage";
 
 type TListItemContext = {
   listItems: TListItem[];
@@ -16,10 +11,10 @@ type TListItemContext = {
 const ListItemContext = createContext<TListItemContext | undefined>(undefined);
 
 export const ListItemProvider = ({ children }: { children: ReactNode }) => {
-  const [listItems, setListItems] = useState<TListItem[]>([]);
+  const [listItems, setListItems] = useLocalStorage("listItems", []);
 
   const deleteItem = (item: TListItem) => {
-    setListItems(listItems.filter((task) => task !== item));
+    setListItems(listItems.filter((task: TListItem) => task !== item));
   };
 
   return (
