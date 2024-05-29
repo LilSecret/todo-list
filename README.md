@@ -13,6 +13,7 @@ You can make a todo list. **Note:** when you refresh your data is not saved. I'v
 ## 🤔 Improvements
 
 - **Light/Dark Mode:** an always handy user implementation
+- **Developer Experience:** add some id's and completed properties to list items
 - **UX:** Clicking anywhere inside task could trigger would trigger the click event
 
 ## 🏗️ Development
