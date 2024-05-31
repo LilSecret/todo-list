@@ -1,6 +1,6 @@
 # 📃 Todo List
 
-You can make a todo list. **Note:** when you refresh your data is not saved. I've created this app for an assignment in one of my courses. I got the design inspiration from [Jihye Leee on Dribbble](https://dribbble.com/shots/3384144-Hello-Dribbble).
+You can make a todo list. I've created this app for an assignment in one of my courses. I got the design inspiration from [Jihye Leee on Dribbble](https://dribbble.com/shots/3384144-Hello-Dribbble).
 
 ## 🚀 Features
 
