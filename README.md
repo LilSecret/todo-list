@@ -12,9 +12,9 @@ You can make a todo list. I've created this app for an assignment in one of my c
 
 ## 🤔 Improvements
 
-- **Light/Dark Mode:** an always handy user implementation
-- **Developer Experience:** add some id's and completed properties to list items
-- **UX:** Clicking anywhere inside task could trigger would trigger the click event
+- **Light/Dark Mode:** Is always a user feature
+- **Developer Experience:** Add some id's and completed properties to todo tasks
+- **UX:** By clicking anywhere inside todo-task can trigger as if you clicked the checkbox
 
 ## 🏗️ Development
 
